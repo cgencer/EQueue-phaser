@@ -1,0 +1,1568 @@
+{
+    "frames": [
+        {
+            "filename": "abcde",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "abced",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 48
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "abdce",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "abdec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 144
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "abecd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 192
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "abedc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 240
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acbde",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 288
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acbed",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 336
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acdbe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 384
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acdeb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 432
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acebd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 480
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "acedb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 528
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adbce",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 576
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adbec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 624
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adcbe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 672
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adceb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 720
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adebc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 768
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "adecb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 816
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aebcd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 864
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aebdc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 912
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aecbd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 960
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aecdb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1008
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aedbc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1056
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "aedcb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1104
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bacde",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1152
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "baced",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1200
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "badce",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1248
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "badec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1296
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "baecd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1344
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "baedc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1392
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bcade",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1440
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bcaed",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1488
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bcdae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1536
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bcdea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1584
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bcead",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1632
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bceda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1680
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdace",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1728
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdaec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdcae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1824
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdcea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1872
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdeac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1920
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bdeca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 1968
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "beacd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2016
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "beadc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2064
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "becad",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2112
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "becda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2160
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bedac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2208
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bedca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2256
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cabde",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2304
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cabed",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2352
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cadbe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2400
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cadeb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2448
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "caebd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2496
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "caedb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2544
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbade",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2592
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbaed",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2640
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbdae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2688
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbdea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2736
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbead",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2784
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cbeda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2832
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdabe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2880
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdaeb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2928
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdbae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 2976
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdbea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3024
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdeab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3072
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cdeba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3120
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ceabd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3168
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ceadb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3216
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cebad",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3264
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cebda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3312
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cedab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3360
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "cedba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3408
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dabce",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3456
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dabec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3504
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dacbe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3552
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "daceb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3600
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "daebc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3648
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "daecb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3696
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbace",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3744
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbaec",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3792
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbcae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3840
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbcea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3888
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbeac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3936
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dbeca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 3984
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dcabe",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4032
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dcaeb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4080
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dcbae",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4128
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dcbea",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4176
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dceab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4224
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "dceba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4272
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "deabc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4320
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "deacb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4368
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "debac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4416
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "debca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4464
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "decab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4512
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "decba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4560
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eabcd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4608
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eacbd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4656
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eacdb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4704
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eabdc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4752
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edcab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4800
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eadbc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4848
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "eadcb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4896
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebacd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4944
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebadc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 4992
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebcad",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5040
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebcda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5088
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebdac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5136
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ebdca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5184
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecabd",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5232
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecadb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5280
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecbad",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5328
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecbda",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5376
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecdab",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5424
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ecdba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5472
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edabc",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5520
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edacb",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5568
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edbac",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5616
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edbca",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5664
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "edcba",
+            "frame": {
+                "w": 120,
+                "h": 48,
+                "x": 0,
+                "y": 5712
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

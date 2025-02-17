@@ -1,0 +1,114 @@
+{
+	"sector_0": {
+		"next": "sector_1",
+		"prev": "sector_7",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_1": {
+		"next": "sector_2",
+		"prev": "sector_0",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_2": {
+		"next": "sector_3",
+		"prev": "sector_2",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_3": {
+		"next": "sector_4",
+		"prev": "sector_2",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_4": {
+		"next": "sector_5",
+		"prev": "sector_3",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_5": {
+		"next": "sector_6",
+		"prev": "sector_4",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_6": {
+		"next": "sector_7",
+		"prev": "sector_5",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+	"sector_7": {
+		"next": "sector_0",
+		"prev": "sector_6",
+		"size": "3",
+		"tiles": {
+			"ring_0": [{}, {}, {}],
+			"ring_1": [{}, {}, {}],
+			"ring_2": [{}, {}, {}],
+			"ring_3": [{}, {}, {}],
+			"ring_4": [{}, {}, {}]
+		},
+		"axes_l": [],
+		"axes_r": []
+	},
+}
