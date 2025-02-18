@@ -5,6 +5,12 @@ export default class EmoTile {
             scene.input.setDraggable(tile, draggable);
             tile.setScale(0.75, 0.75);
             tile.setAlpha((0.4+(depth*0.3)), (0.4+(depth*0.3)), (0.4+(depth*0.3)), (0.4+(depth*0.3)));
+			tile.setData({
+				'id': sprite,
+				'orgX': x,
+				'orgY': y,
+				'oldA': tile.alpha,
+			});
             return tile;
         }
     }

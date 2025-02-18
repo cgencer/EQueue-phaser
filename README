@@ -3,6 +3,7 @@ I've been developing for a while. The code is built with Phaser3
 and for the multiplayer connectivity, I am using a simple 
 socket-service on node.js.
 
-Please remind that this game is in its early stages and not for
-copying its mechanics bluntlessly. This prototype serves only as
-the playtest ground for the main mechanics.
+Please be reminded that this game is in its early stages and not 
+for copying its mechanics bluntlessly. This prototype serves only
+as the playtest ground for the main mechanics.
+

@@ -62,6 +62,8 @@ export default class OctaBoard extends Phaser.Scene {
 
             this.queues[pl] = new Queue(this, pl);
             this.playerZone[pl] = this.queues[pl].renderZone();
+            this.playerZone[pl].setData('lastTile', startTile);
+
             this.outline = this.queues[pl].renderOutline(this.playerZone[pl], (pl>0) ? 0xff69b4 : 0xffffff);
 //            this.playerZone[pl].data.values.tiles = 1;
             this.queues[pl].addToQueue(this.playerZone[pl], startTile, false);
@@ -86,11 +88,30 @@ export default class OctaBoard extends Phaser.Scene {
         })
 
         this.input.on('drop', function (pointer, gameObject, dropZone) {
-            gameObject.setAlpha(1, 1, 1, 1);
-            gameObject.x = dropZone.x - (dropZone.input.hitArea.width / 2) + 5;
-            gameObject.y = dropZone.y - (dropZone.input.hitArea.height / 2) + (dropZone.data.values.tiles * 36);
-            dropZone.data.values.tiles++;
-            gameObject.disableInteractive();
+
+//            lastTile = (dropZone.data.values.tiles.length > 0) ? dropZone.data.values.tiles[dropZone.data.values.tiles.length-1].getData('id') : '-----';
+            const lastTile = dropZone.getData('lastTile');
+            const thisTile = gameObject.getData('id');
+            if(lastTile != '-'){
+                if(
+                    ( thisTile.substr(2,1) == lastTile.substr(3,1) ) ||
+                    ( thisTile.substr(2,1) == lastTile.substr(1,1) ) ||
+                    ( thisTile.substr(1,1) == lastTile.substr(0,1) ) || 
+                    ( thisTile.substr(3,1) == lastTile.substr(4,1) ) 
+                ){
+                    gameObject.setAlpha(1, 1, 1, 1);
+                    gameObject.x = dropZone.x - (dropZone.input.hitArea.width / 2) + 5;
+                    gameObject.y = dropZone.y - (dropZone.input.hitArea.height / 2) + 5 + ((dropZone.data.values.tiles.length) * 36);
+                    gameObject.disableInteractive();
+                    dropZone.data.values.tiles.push(gameObject.getData('id'));
+                    dropZone.setData('lastTile', gameObject.getData('id'));
+                }else{
+                    gameObject.x = gameObject.input.dragStartX;
+                    gameObject.y = gameObject.input.dragStartY;                    
+                }
+            }
+
+
 //            self.socket.emit('cardPlayed', gameObject, self.isPlayerA);
         })
 

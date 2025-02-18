@@ -9,9 +9,14 @@ export default class Queue {
             const worldY = 550;
 
             let dropZone = scene.add.zone(worldX+(playerNo*200), worldY, 100, 400).setRectangleDropZone(100, 400);
-            dropZone.setData({ tiles: 1, playerNo: playerNo, added: [] });
+            dropZone.setData({ 
+                playerNo: playerNo,
+                lastTile: '',
+                tiles: [] 
+            });
             return dropZone;
         };
+
         this.renderOutline = (dropZone, color) => {
 
             let dropZoneOutline = scene.add.graphics();
@@ -21,11 +26,11 @@ export default class Queue {
                                         dropZone.input.hitArea.width, 
                                         dropZone.input.hitArea.height)
         };
+
         this.addToQueue = (dropZone, oneTile, draggable) => {
             let aTile = new EmoTile(scene, draggable);
             aTile.render(dropZone.x - (dropZone.input.hitArea.width / 2) + 5, dropZone.y - (dropZone.input.hitArea.height / 2) + 5, oneTile, 2);
-            dropZone.data.values.added.push(oneTile);
+            dropZone.data.values.tiles.push(oneTile);
         };
-
     }
 }
