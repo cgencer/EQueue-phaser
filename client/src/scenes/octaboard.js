@@ -1,5 +1,7 @@
 import EmoTile from '../helpers/emotile';
 import Queue from '../helpers/queue';
+import Marker from '../helpers/marker';
+
 var _ = require('lodash');
 
 export default class OctaBoard extends Phaser.Scene {
@@ -40,19 +42,19 @@ export default class OctaBoard extends Phaser.Scene {
 
         let startTiles = [];
         for (let z = 0; z < 8; z++) {
-            startTiles.push(tiles.shift());
+            startTiles.push(tiles.pop());
         }
 
         let i = 0;
+        let pos = 0;
         for (let z = 0; z < 3; z++) {
-            let pos = 0;
             for (let y = 0; y < 5; y++) {
                 for (let x = 0; x < 8; x++) {
                     if(tiles.length > 0){
                         let aTile = new EmoTile(this, true);
                         this.unQueued.push( 
                             aTile.render(
-                                30+(x*120)-(z*5), 
+                                30+(x*150)-(z*5), 
                                 30+(y*60)-(z*5), {
                                     pos: pos++, 
                                     depth: 2-z,
@@ -60,6 +62,10 @@ export default class OctaBoard extends Phaser.Scene {
                                 }
                             ) 
                         );
+                    }
+                    if(y<4){
+                        let aMarker = new Marker(this);
+                        aMarker.render((x*150)+142, (y*62)+70);
                     }
                 }
             }
