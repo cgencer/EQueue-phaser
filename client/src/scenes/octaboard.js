@@ -13,6 +13,7 @@ export default class OctaBoard extends Phaser.Scene {
         this.load.atlas('emotiles', 'src/assets/emotiles.png', 'data/emotiles_atlas.json');
         this.images = [];
         this.playerZone = [];
+        this.unQueued = [];
         this.queues = [];
         this.queueTiles = [];
 
@@ -44,12 +45,21 @@ export default class OctaBoard extends Phaser.Scene {
 
         let i = 0;
         for (let z = 0; z < 3; z++) {
+            let pos = 0;
             for (let y = 0; y < 5; y++) {
                 for (let x = 0; x < 8; x++) {
-//                    let i = ((2-z)*40)+(y*8)+x;
                     if(tiles.length > 0){
                         let aTile = new EmoTile(this, true);
-                        aTile.render(30+(x*120)-(z*5), 30+(y*60)-(z*5), tiles.shift(), z);
+                        this.unQueued.push( 
+                            aTile.render(
+                                30+(x*120)-(z*5), 
+                                30+(y*60)-(z*5), {
+                                    pos: pos++, 
+                                    depth: 2-z,
+                                    id: tiles.shift()
+                                }
+                            ) 
+                        );
                     }
                 }
             }
@@ -99,12 +109,30 @@ export default class OctaBoard extends Phaser.Scene {
                     ( thisTile.substr(1,1) == lastTile.substr(0,1) ) || 
                     ( thisTile.substr(3,1) == lastTile.substr(4,1) ) 
                 ){
-                    gameObject.setAlpha(1, 1, 1, 1);
                     gameObject.x = dropZone.x - (dropZone.input.hitArea.width / 2) + 5;
                     gameObject.y = dropZone.y - (dropZone.input.hitArea.height / 2) + 5 + ((dropZone.data.values.tiles.length) * 36);
-                    gameObject.disableInteractive();
+
+                    // now re-alpha the remaining tiles
+
+                    const thePos = gameObject.getData('pos') % 40;
+                    if(gameObject.getData('depth') === 0) {
+
+                        self.unQueued[thePos + 40].setAlpha(1, 1, 1, 1);
+                        self.unQueued[thePos + 80].setAlpha(0.7, 0.7, 0.7, 0.7);
+
+                    } else if(gameObject.getData('depth') === 1) {
+
+                        self.unQueued[thePos + 80].setAlpha(1, 1, 1, 1);
+                    }
+
+                    self.unQueued[gameObject.getData('pos')] = null;
+
                     dropZone.data.values.tiles.push(gameObject.getData('id'));
                     dropZone.setData('lastTile', gameObject.getData('id'));
+
+                    gameObject.disableInteractive();
+                    gameObject.setAlpha(1, 1, 1, 1);
+
                 }else{
                     gameObject.x = gameObject.input.dragStartX;
                     gameObject.y = gameObject.input.dragStartY;                    

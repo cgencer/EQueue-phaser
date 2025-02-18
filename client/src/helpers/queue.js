@@ -29,7 +29,11 @@ export default class Queue {
 
         this.addToQueue = (dropZone, oneTile, draggable) => {
             let aTile = new EmoTile(scene, draggable);
-            aTile.render(dropZone.x - (dropZone.input.hitArea.width / 2) + 5, dropZone.y - (dropZone.input.hitArea.height / 2) + 5, oneTile, 2);
+            aTile.render(
+                dropZone.x - (dropZone.input.hitArea.width / 2) + 5, 
+                dropZone.y - (dropZone.input.hitArea.height / 2) + 5, 
+                {pos: -1, depth: 0, id: oneTile}
+            );
             dropZone.data.values.tiles.push(oneTile);
         };
     }
