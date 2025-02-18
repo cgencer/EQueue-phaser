@@ -25,6 +25,11 @@ export default class Queue {
                                         dropZone.y - dropZone.input.hitArea.height / 2, 
                                         dropZone.input.hitArea.width, 
                                         dropZone.input.hitArea.height)
+
+            let titles = scene.add.text(dropZone.x - dropZone.input.hitArea.width / 2 + 20, 
+                                        dropZone.y - dropZone.input.hitArea.height / 2 - 24,
+                                        'player '+(playerNo+1), 
+                                        { font: '18px Arial', fill: '#ffffff' });
         };
 
         this.addToQueue = (dropZone, oneTile, draggable) => {
