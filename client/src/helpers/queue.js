@@ -5,10 +5,10 @@ export default class Queue {
     constructor(scene, playerNo) {
 
         this.renderZone = () => {
-            const worldX = 200;
-            const worldY = 550;
+            const worldX = 60;
+            const worldY = 580;
 
-            let dropZone = scene.add.zone(worldX+(playerNo*200), worldY, 100, 400).setRectangleDropZone(100, 400);
+            let dropZone = scene.add.zone(worldX+(playerNo*200)+(playerNo === 0 ? 20:50), worldY, 100, 350).setRectangleDropZone(100, 350);
             dropZone.setData({ 
                 playerNo: playerNo,
                 lastTile: '',

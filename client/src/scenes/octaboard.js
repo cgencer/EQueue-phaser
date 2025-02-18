@@ -18,7 +18,18 @@ export default class OctaBoard extends Phaser.Scene {
         this.unQueued = [];
         this.queues = [];
         this.queueTiles = [];
+        this.connections = [[0, 1, 8, 9], [1, 2, 9, 10], [2, 3, 10, 11], [3, 4, 11, 12],
+         [4, 5, 12, 13], [5, 6, 13, 14], [6, 7, 14, 15], [7, 0, 15, 8],
 
+         [8, 9, 16, 17], [9, 10, 17, 18], [10, 11, 18, 19], [11, 12, 19, 20],
+         [12, 13, 20, 21], [13, 14, 21, 22], [14, 15, 22, 23], [15, 8, 23, 16],
+
+         [16, 17, 24, 25], [17, 18, 25, 26], [18, 19, 26, 27], [19, 20, 27, 28],
+         [20, 21, 28, 29], [21, 22, 29, 30], [22, 23, 30, 31], [23, 16, 31, 24],
+
+         [24, 25, 32, 33], [25, 26, 33, 34], [26, 27, 34, 35], [27, 28, 35, 36],
+         [28, 29, 36, 37], [29, 30, 37, 38], [30, 31, 38, 39], [31, 24, 39, 32]
+        ]
     }
 
     create() {
@@ -55,7 +66,7 @@ export default class OctaBoard extends Phaser.Scene {
                         this.unQueued.push( 
                             aTile.render(
                                 30+(x*150)-(z*5), 
-                                30+(y*60)-(z*5), {
+                                60+(y*60)-(z*5), {
                                     pos: pos++, 
                                     depth: 2-z,
                                     id: tiles.shift()
@@ -63,15 +74,23 @@ export default class OctaBoard extends Phaser.Scene {
                             ) 
                         );
                     }
-                    if(y<4){
-                        let aMarker = new Marker(this);
-                        aMarker.render((x*150)+142, (y*62)+70);
-                    }
                 }
             }
         }
+        for (let y = 0; y < 6; y++) {
+            for (let x = 0; x < 8; x++) {
+                let aMarker = new Marker(this);
+                aMarker.render((x*150)+143, (y*60)+45);
+            }
+        }
 
-        for (let pl = 0; pl < 4; pl++) {
+        for (let p = 8; p < 120; p++) {
+//            this.unQueued[p].disableInteractive();
+//            this.unQueued[p].input.draggable = false;
+
+        }
+
+        for (let pl = 0; pl < 6; pl++) {
 
             const startTile = startTiles.shift();
             this.queueTiles[pl] = [];
@@ -84,6 +103,10 @@ export default class OctaBoard extends Phaser.Scene {
 //            this.playerZone[pl].data.values.tiles = 1;
             this.queues[pl].addToQueue(this.playerZone[pl], startTile, false);
         }
+
+        this.input.on('gameobjectup', function (pointer, gameObject) {
+            gameObject.emit('clicked', gameObject);
+        }, this);
 
         this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
             gameObject.x = dragX;
