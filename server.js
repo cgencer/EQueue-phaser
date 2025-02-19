@@ -23,7 +23,7 @@ fs.readFile('client/data/static.json', function(err, data) {
             _.set(tiles[i], [j, 'backSize'], tiles[i][j].back.length);
         }
     }
-    console.dir(tiles);
+//    console.dir(tiles);
 });
 
 io.on('connection', function (socket) {
