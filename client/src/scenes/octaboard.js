@@ -17,7 +17,7 @@ export default class OctaBoard extends Phaser.Scene {
 
         // for converting into atlas files:
         // https://gammafp.com/tool/atlas-packer/
-        this.load.atlas('emotiles', 'src/assets/images/emotiles.png', 'data/emotiles_atlas.json');
+        this.load.atlas('emotiles', './src/assets/images/emotiles.png', 'data/emotiles_atlas.json');
         this.images = [];
         this.playerZone = [];
         this.unQueued = [];
