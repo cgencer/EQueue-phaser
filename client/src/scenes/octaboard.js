@@ -1,3 +1,6 @@
+import WebpackLoader from 'phaser-webpack-loader';
+import AssetManifest from '../../AssetManifest';
+
 import EmoTile from '../helpers/emotile';
 import Queue from '../helpers/queue';
 import Marker from '../helpers/marker';
@@ -10,9 +13,11 @@ export default class OctaBoard extends Phaser.Scene {
     }
  
     preload() {
+        this.load.scenePlugin('WebpackLoader', WebpackLoader, 'loader', 'loader');
+
         // for converting into atlas files:
         // https://gammafp.com/tool/atlas-packer/
-        this.load.atlas('emotiles', 'src/assets/emotiles.png', 'data/emotiles_atlas.json');
+        this.load.atlas('emotiles', 'src/assets/images/emotiles.png', 'data/emotiles_atlas.json');
         this.images = [];
         this.playerZone = [];
         this.unQueued = [];
@@ -39,6 +44,8 @@ export default class OctaBoard extends Phaser.Scene {
     }
 
     create() {
+
+        this.loader.start(AssetManifest);
 
         let self = this;
 

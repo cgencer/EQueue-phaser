@@ -5,6 +5,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  resolve: {
+    alias: {
+      assets: path.join(__dirname, '../src/assets'),
+    },
+  },
   devtool: "eval-source-map",
   module: {
     rules: [
