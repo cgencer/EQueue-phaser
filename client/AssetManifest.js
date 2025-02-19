@@ -1,6 +1,6 @@
 const AssetManifest = {
   images: [
-    'assets/emotiles.png'
+    './assets/images/emotiles.png'
   ],
   sprites: [
   ],
