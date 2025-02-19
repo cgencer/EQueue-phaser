@@ -4,6 +4,7 @@ import AssetManifest from '../../AssetManifest';
 import EmoTile from '../helpers/emotile';
 import Queue from '../helpers/queue';
 import Marker from '../helpers/marker';
+import Card from '../helpers/card';
 
 var _ = require('lodash');
 
@@ -79,7 +80,7 @@ export default class OctaBoard extends Phaser.Scene {
                         this.unQueued.push( 
                             aTile.render(
                                 30+(x*150)-(z*5), 
-                                60+(y*60)-(z*5), {
+                                40+(y*60)-(z*5), {
                                     pos: pos++, 
                                     depth: 2-z,
                                     id: tiles.shift()
@@ -94,7 +95,7 @@ export default class OctaBoard extends Phaser.Scene {
         for (let y = 0; y < 6; y++) {
             for (let x = 0; x < 8; x++) {
                 let aMarker = new Marker(this);
-                this.unMarked.push(aMarker.render((x*150)+143, (y*60)+45));
+                this.unMarked.push(aMarker.render((x*150)+143, (y*60)+25));
             }
         }
 
@@ -103,6 +104,11 @@ export default class OctaBoard extends Phaser.Scene {
 //            this.unQueued[p].disableInteractive();
 //            this.unQueued[p].input.draggable = false;
 
+        }
+
+        for (let p = 0; p < 8; p++) {
+            let aCard = new Card(this);
+            aCard.render(((p-8)*20)+240, 735+((p-8)*20), p, "2 / 3 / 5", '1');
         }
 
         for (let pl = 0; pl < 6; pl++) {
