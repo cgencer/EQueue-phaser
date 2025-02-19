@@ -81,6 +81,7 @@ export default class OctaBoard extends Phaser.Scene {
                             aTile.render(
                                 30+(x*150)-(z*5), 
                                 40+(y*60)-(z*5), {
+                                    active: (z==2) ? true : false,
                                     pos: pos++, 
                                     depth: 2-z,
                                     id: tiles.shift()
@@ -100,15 +101,17 @@ export default class OctaBoard extends Phaser.Scene {
         }
 
         for (let p = 8; p < 48; p++) {
-            this.unMarked[p].setData('active', false);
+//            this.unMarked[p].setData('active', false);
 //            this.unQueued[p].disableInteractive();
 //            this.unQueued[p].input.draggable = false;
 
         }
 
-        for (let p = 0; p < 8; p++) {
+        for (let cardNo = 0; cardNo < 8; cardNo++) {
             let aCard = new Card(this);
-            aCard.render(((p-8)*20)+240, 735+((p-8)*20), p, "2 / 3 / 5", '1');
+            aCard.render(((cardNo-8)*20)+240, 
+                         735+((cardNo-8)*20), 
+                         cardNo, "2 / 3 / 5", "1");
         }
 
         for (let pl = 0; pl < 6; pl++) {
@@ -125,29 +128,38 @@ export default class OctaBoard extends Phaser.Scene {
             this.queues[pl].addToQueue(this.playerZone[pl], startTile, false);
         }
 
-        this.input.on('gameobjectup', function (pointer, gameObject) {
-            gameObject.emit('clicked', gameObject);
-        }, this);
 
-        this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
+        this.input.on('gameobjectover', (pointer, object) => {
+            if(object.data.values.active) {
+                object.setTint(0xff0000);
+            }
+        });
+
+        this.input.on('gameobjectout', (pointer, object) => {
+            if(object.data.values.active) {
+                object.clearTint();
+            }
+        });
+
+        this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
             gameObject.x = dragX;
             gameObject.y = dragY;
         })
 
-        this.input.on('dragstart', function (pointer, gameObject) {
+        this.input.on('dragstart', (pointer, gameObject) => {
             gameObject.setTint(0xff69b4);
             self.children.bringToTop(gameObject);
         })
 
-        this.input.on('dragend', function (pointer, gameObject, dropped) {
-            gameObject.setTint();
+        this.input.on('dragend', (pointer, gameObject, dropped) => {
+            gameObject.clearTint();
             if (!dropped) {
                 gameObject.x = gameObject.input.dragStartX;
                 gameObject.y = gameObject.input.dragStartY;
             }
         })
 
-        this.input.on('drop', function (pointer, gameObject, dropZone) {
+        this.input.on('drop', (pointer, gameObject, dropZone) => {
 
 //            lastTile = (dropZone.data.values.tiles.length > 0) ? dropZone.data.values.tiles[dropZone.data.values.tiles.length-1].getData('id') : '-----';
             const lastTile = dropZone.getData('lastTile');

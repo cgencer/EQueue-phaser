@@ -56,30 +56,38 @@ export default class Card {
 				{id: "654", axes: [6, 5, 4]}, {id: "765", axes: [7, 6, 5]}
 			];
 
-//			Phaser.Utils.Array.Shuffle(frames);
-//			image.setInteractive({ draggable: true });
+			const shuffledCards = Phaser.Utils.Array.Shuffle(cards);
 
-            let dropZone = scene.add.zone(x, y, 130, 200).setRectangleDropZone(130, 200).setInteractive();
-	        let c = scene.add.graphics(); //.setInteractive();
-			c.fillStyle(0xcccccc, 1);
-	        c.lineStyle(2, 0x888888, 2);
+            let dropZone = scene.add.zone(x, y, 130, 200).setRectangleDropZone(130, 200);
+	        let cardBody = scene.add.graphics(dropZone.input.hitArea).setInteractive();
 
-	        c.strokeRoundedRect(dropZone.x - dropZone.input.hitArea.width / 2,
-	        					dropZone.y - dropZone.input.hitArea.height / 2, 
-	        					dropZone.input.hitArea.width,
-	        					dropZone.input.hitArea.height, 18);
-	        c.fillRoundedRect(dropZone.x - dropZone.input.hitArea.width / 2,
-	        					dropZone.y - dropZone.input.hitArea.height / 2, 
-	        					dropZone.input.hitArea.width,
-	        					dropZone.input.hitArea.height, 18);
-//	        c.setShadow(10, 10);
+			cardBody.fillStyle(0xcccccc, 1);
+	        cardBody.lineStyle(2, 0x888888, 2);
 
-            let axes = scene.add.text(dropZone.x - (dropZone.input.hitArea.width / 2) + 13, 
+			cardBody.on('pointerover', (event) => {
+                event.target.setTint(0xff0000);
+            });
+// event.stopPropagation();
+
+			cardBody.on('pointerout', (event) => {
+                event.target.clearTint();
+            });
+
+			cardBody.strokeRoundedRect(	dropZone.x - dropZone.input.hitArea.width / 2,
+			        					dropZone.y - dropZone.input.hitArea.height / 2, 
+			        					dropZone.input.hitArea.width,
+			        					dropZone.input.hitArea.height, 18);
+			cardBody.fillRoundedRect(	dropZone.x - dropZone.input.hitArea.width / 2,
+			        					dropZone.y - dropZone.input.hitArea.height / 2, 
+			        					dropZone.input.hitArea.width,
+			        					dropZone.input.hitArea.height, 18);
+
+            let axes = scene.add.text(	dropZone.x - (dropZone.input.hitArea.width / 2) + 13, 
             							dropZone.y - (dropZone.input.hitArea.height / 2), 
-            							'axes: '+text, 
+            							'axes: '+shuffledCards[playerNo].axes.join(' / '), 
                                         { font: '18px Arial', fill: '#000000' });
 
-            let dukha = scene.add.text(dropZone.x - (dropZone.input.hitArea.width / 2), 
+            let dukha = scene.add.text(	dropZone.x - (dropZone.input.hitArea.width / 2), 
             							dropZone.y + (dropZone.input.hitArea.height / 2) - 10, 
             							'dukha: '+price, 
                                         { font: '18px Arial', fill: '#000000' });
