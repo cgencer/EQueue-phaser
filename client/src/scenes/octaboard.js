@@ -93,6 +93,24 @@ export default class OctaBoard extends Phaser.Scene {
             }
         }
 
+        /* ********************************************************************
+        **
+        ** alpha-correction patch for the last row as it has only 2 tiles...
+        **
+        ** *******************************************************************/
+
+        for (let t = 0; t < this.unQueued.length; t++) {
+            // last row is >31
+            if(t > 71 && t < 80) this.unQueued[t].setAlpha(1, 1, 1, 1);
+            if(t > 31 && t < 40) this.unQueued[t].setAlpha(0.7, 0.7, 0.7, 0.7);
+        }
+
+        /* ********************************************************************
+        **
+        ** Marker-locations...
+        **
+        ** *******************************************************************/
+
         for (let y = 0; y < 6; y++) {
             for (let x = 0; x < 8; x++) {
                 let aMarker = new Marker(this);
@@ -100,12 +118,11 @@ export default class OctaBoard extends Phaser.Scene {
             }
         }
 
-        for (let p = 8; p < 48; p++) {
-//            this.unMarked[p].setData('active', false);
-//            this.unQueued[p].disableInteractive();
-//            this.unQueued[p].input.draggable = false;
-
-        }
+        /* ********************************************************************
+        **
+        ** Deal the cards... TO-DO: needs to receive the cards from the server 
+        **
+        ** *******************************************************************/
 
         for (let cardNo = 0; cardNo < 8; cardNo++) {
             let aCard = new Card(this);
@@ -113,6 +130,12 @@ export default class OctaBoard extends Phaser.Scene {
                          735+((cardNo-8)*20), 
                          cardNo, "2 / 3 / 5", "1");
         }
+
+        /* ********************************************************************
+        **
+        ** The player queue's, contains a dropzone and the beginning tiles...
+        **
+        ** *******************************************************************/
 
         for (let pl = 0; pl < 6; pl++) {
 
@@ -164,12 +187,12 @@ export default class OctaBoard extends Phaser.Scene {
 //            lastTile = (dropZone.data.values.tiles.length > 0) ? dropZone.data.values.tiles[dropZone.data.values.tiles.length-1].getData('id') : '-----';
             const lastTile = dropZone.getData('lastTile');
             const thisTile = gameObject.getData('id');
-            if(lastTile != '-'){
+            if(lastTile != ''){
                 if(
-                    ( thisTile.substr(2,1) == lastTile.substr(3,1) ) ||
-                    ( thisTile.substr(2,1) == lastTile.substr(1,1) ) ||
-                    ( thisTile.substr(1,1) == lastTile.substr(0,1) ) || 
-                    ( thisTile.substr(3,1) == lastTile.substr(4,1) ) 
+                    ( thisTile.substr(2,1) === lastTile.substr(3,1) ) ||
+                    ( thisTile.substr(2,1) === lastTile.substr(1,1) ) ||
+                    ( thisTile.substr(1,1) === lastTile.substr(0,1) ) || 
+                    ( thisTile.substr(3,1) === lastTile.substr(4,1) ) 
                 ){
                     gameObject.x = dropZone.x - (dropZone.input.hitArea.width / 2) + 5;
                     gameObject.y = dropZone.y - (dropZone.input.hitArea.height / 2) + 5 + ((dropZone.data.values.tiles.length) * 36);
@@ -177,7 +200,7 @@ export default class OctaBoard extends Phaser.Scene {
                     // now re-alpha the remaining tiles
 
                     const thePos = gameObject.getData('pos') % 40;
-                    if(gameObject.getData('depth') === 0) {
+                    if(gameObject.getData('depth') === 2) {
 
                         self.unQueued[thePos + 40].setAlpha(1, 1, 1, 1);
                         self.unQueued[thePos + 80].setAlpha(0.7, 0.7, 0.7, 0.7);
