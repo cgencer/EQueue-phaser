@@ -102,6 +102,7 @@ export default class OctaBoard extends Phaser.Scene {
             // last row is >31
             if(t > 71 && t < 80) this.unQueued[t].setAlpha(1, 1, 1, 1);
             if(t > 31 && t < 40) this.unQueued[t].setAlpha(0.7, 0.7, 0.7, 0.7);
+            if(t > 71 && t < 80) this.unQueued[t].setData('active', true);
         }
 
         /* ********************************************************************
@@ -199,16 +200,21 @@ export default class OctaBoard extends Phaser.Scene {
                     // now re-alpha the remaining tiles
 
                     const thePos = gameObject.getData('pos') % 40;
-console.log(gameObject.getData('pos'));
+//console.log(gameObject.getData('pos'));
 
                     if(gameObject.getData('depth') === 0) {        // top one of 3 tiles was taken
-
+                        // remember that the order of placement is from bottom to top level
+                        // where as depth is the opposite (top level is 0, bottom level is 2)
+                        // thus the alpha values had to be set according to the placements.
                         self.unQueued[thePos + 40].setAlpha(1, 1, 1, 1);
+                        self.unQueued[thePos + 40].setData('active', true);
+
                         self.unQueued[thePos].setAlpha(0.7, 0.7, 0.7, 0.7);
 
                     } else if(gameObject.getData('depth') === 1) { // mid one of 3 tiles was taken
 
                         self.unQueued[thePos].setAlpha(1, 1, 1, 1);
+                        self.unQueued[thePos].setData('active', true);
                     }
 
                     self.unQueued[gameObject.getData('pos')] = null;
