@@ -49,7 +49,6 @@ export default class OctaBoard extends Phaser.Scene {
         this.loader.start(AssetManifest);
 
         let self = this;
-
         let tiles = [
         'abcde', 'abced', 'abdce', 'abdec', 'abecd', 'abedc', 'acbde', 'acbed', 'acdbe', 'acdeb', 
         'acebd', 'acedb', 'adbce', 'adbec', 'adcbe', 'adceb', 'adebc', 'adecb', 'aebcd', 'aebdc', 
@@ -200,14 +199,16 @@ export default class OctaBoard extends Phaser.Scene {
                     // now re-alpha the remaining tiles
 
                     const thePos = gameObject.getData('pos') % 40;
-                    if(gameObject.getData('depth') === 2) {
+console.log(gameObject.getData('pos'));
+
+                    if(gameObject.getData('depth') === 0) {        // top one of 3 tiles was taken
 
                         self.unQueued[thePos + 40].setAlpha(1, 1, 1, 1);
-                        self.unQueued[thePos + 80].setAlpha(0.7, 0.7, 0.7, 0.7);
+                        self.unQueued[thePos].setAlpha(0.7, 0.7, 0.7, 0.7);
 
-                    } else if(gameObject.getData('depth') === 1) {
+                    } else if(gameObject.getData('depth') === 1) { // mid one of 3 tiles was taken
 
-                        self.unQueued[thePos + 80].setAlpha(1, 1, 1, 1);
+                        self.unQueued[thePos].setAlpha(1, 1, 1, 1);
                     }
 
                     self.unQueued[gameObject.getData('pos')] = null;
